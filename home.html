@@ -7,13 +7,25 @@
     <style>
         .container-1{
             display: flex;
+            /*
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+
+            flex-direction: column;
+
+            */
         }
 
-        .container-1 div{
+        .container-1 div, .container-2 div{
             border: 1px #ccc solid;
             padding: 10px;
         }
 
+        .container-2 {
+            display: flex;
+            justify-content: space-between;
+        }
         .box-1{
             flex: 2;
             order: 2;
@@ -27,6 +39,10 @@
         .box-3{
             flex: 1;
             order: 3;
+        }
+
+        .container-2-box {
+            width: 20%;
         }
     </style>
     <title>Brad's Flexbox Tut</title>
@@ -44,6 +60,21 @@
         <div class="box-3">
             <h3>Box Three</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box Four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, cupiditate veritatis!</p>
+        </div>
+        <!--div class="container-2-box">
+            <h3>Box Five</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, hic repellat?</p>
+        </div-->
+        <div class="container-2-box">
+            <h3>Box Six</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, mollitia provident?</p>
         </div>
     </div>
 </body>
